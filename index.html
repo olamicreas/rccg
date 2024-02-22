@@ -14,6 +14,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="rlogo.png">
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=TT+Moons:wght@400;700&display=swap');
+
+
     #mainNavbar {
     }
 
@@ -98,9 +101,24 @@
     }
 
 
+    @media (min-width:1025px) {
+        .slider-title {
+            font-size: 110px;
+            color: rgb(255, 255, 255);
+
+            
+        }
+        .swiper-slide {
+            min-height: 900px;
+            text-align: center;
+            
+        }
+
+    }
 
 
 
+    
 
 
 
@@ -262,12 +280,12 @@
 <body>
     <nav id="bar" class=" fixed-top">
         <nav class="nav">
-            <div class="container">
+            <div class="container" style="min-width: 100%;">
                 <div class="logo">
                     <a href="#"><img src="rlogo.png" style="width: 70px;"></a>
                 </div>
                 <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
+                    <ul class="navlinks" >
                         <li><a href="index.html">Home</a></li>
                         <li>
                             <div class="dropdown">
@@ -322,9 +340,15 @@
                 <!-- Slides -->
                 <div class="swiper-slide slide-1">
                     <div class="container" style="min-width: 100%;">
+                        
                         <div class="slider-container">
+                           
                             <div class="animated-area">
-                                <p class="slider-title cssanimation sequence leFadeInLeft pt" style="color: white;">Welcome To Our Church</p>
+                               
+                                <div class="slider-title cssanimation sequence leFadeInLeft pt" style="font-family: 'TT Moons', sans-serif; color: rgb(255, 255, 255);">
+                                    <span class="yelTxt">The RCCG Jesus Mobile House</span>
+                                    <p style="font-family:'TT Moons', sans-serif;">Welcome To Our Church</p>
+                                </div>
                             </div>
                            
                             <div id="space">
@@ -337,7 +361,10 @@
                     <div class="container">
                         <div class="slider-container">
                             <div class="animated-area">
-                                <p class="slider-title cssanimation sequence leFadeInLeft pt" style="color: white;">Salvation is Here, Join Our Community</p>
+                                <div class="slider-title cssanimation sequence leFadeInLeft pt" style="font-family: 'TT Moons', sans-serif; color: rgb(255, 255, 255);">
+                                    <span class="yelTxt">The RCCG Jesus Mobile House</span>
+                                    <p style="font-family:'TT Moons', sans-serif;">Salvation Is Here Join Community</p>
+                                </div>
                             </div>
                         </div>
                         <div id="space">
@@ -349,7 +376,10 @@
                     <div class="container">
                         <div class="slider-container">
                             <div class="animated-area animated">
-                                <p class="slider-title cssanimation sequence leFadeInLeft pt" style="color: white;">Commited to Gospel of Jesus Christ</p>
+                                <div class="slider-title cssanimation sequence leFadeInLeft pt" style="font-family: 'TT Moons', sans-serif; color: rgb(255, 255, 255);">
+                                    <span class="yelTxt">The RCCG Jesus Mobile House</span>
+                                    <p style="font-family:'TT Moons', sans-serif;">Commited to the Gospel of Jesus Christ</p>
+                                </div>
                             </div>
                         </div>
                         <div id="space"></div>

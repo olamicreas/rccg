@@ -15,6 +15,17 @@ body {
 
 /* Navbar section */
 
+@font-face {
+    font-family: 'TT Moons';
+    src: url('tt_moons/TT\ Moons\ Trial\ Bold.otf') format('truetype');
+    font-weight: bold; /* Specify bold font weight */
+    font-style: normal; /* Specify normal font style */
+}
+
+
+
+
+
 .nav {
     width: 100%;
     height: 65px;
@@ -398,14 +409,24 @@ body {
     
     font-size: 40px;
     font-weight: bolder;
-    font-style: italic;
+    
     font-stretch: normal;
     line-height: normal;
     letter-spacing: -1.03px;
     color: #ffffff;
     padding: 40px 0px;
     opacity: 1;
-    margin-top: 60%;
+    margin-top: 50%;
+    font-family: 'TT Moons', sans-serif;
+    
+}
+
+.yelTxt {
+    font-size: 16px;
+    font-style: italic; 
+    
+    color: rgb(255, 189, 17); 
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -590,7 +611,7 @@ body {
         }
         .slider-title {
             font-size: 50px;
-            margin-top: 20%;
+            margin-top: 10%;
         }
         #development-img {
         
@@ -601,6 +622,13 @@ body {
         }
         #bb{
             margin-top: 5%;
+        }
+        .yelTxt {
+            font-size: 30px;
+            font-style: italic; 
+            
+            color: rgb(255, 189, 17); 
+            font-family: 'Courier New', Courier, monospace;
         }
         
        
