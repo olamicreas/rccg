@@ -53,8 +53,11 @@ body {
 
 .nav div.main_list {
     height: 65px;
-    float: right;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
 }
+
 
 .nav div.main_list ul {
     width: 100%;
@@ -129,6 +132,7 @@ body {
         width: 100%;
         height: 0;
         overflow: hidden;
+        text-align: center;
     }
     .nav div.show_list {
         height: auto;
@@ -140,6 +144,7 @@ body {
         height: 100vh;
         right: 0;
         left: 0;
+        margin-left: -30%;
         bottom: 0;
         background-color: #111;
         /*same background color of navbar*/
@@ -219,6 +224,62 @@ body {
 .navTrigger.active i:nth-child(3) {
     -webkit-animation: inBtm 0.8s forwards;
     animation: inBtm 0.8s forwards;
+}
+
+
+/* Adjusting donate button */
+.nav div:nth-child(3) button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    width: 120px;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: fixed;
+    top: 22px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+}
+
+@media (max-width: 768px) {
+    .nav div:nth-child(3) button {
+        font-size: 14px;
+        width: 100px;
+        height: 40px;
+        padding: 8px 16px;
+        border-radius: 20px;
+        padding-bottom: 4%;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav div:nth-child(3) button {
+        font-size: 12px;
+        width: 100px; /* Adjusted width */
+        height: 40px; /* Adjusted height */
+        padding: 8px; /* Adjusted padding */
+        border-radius: 20px;
+    }
+}
+
+.nav div:nth-child(3) button:hover{
+    background-color: rgb(242, 104, 55);
+    text-decoration: none;
+}
+
+/* Adjusting social media icons */
+.nav div:nth-child(4) a {
+    color: #fff; /* Change icon color */
+    font-size: 2rem; /* Adjust icon size */
+    margin-right: 10px; /* Add some margin between social icons */
 }
 
 @-webkit-keyframes inM {
@@ -630,6 +691,9 @@ body {
             color: rgb(255, 189, 17); 
             font-family: 'Courier New', Courier, monospace;
         }
+
+
+
         
        
 
