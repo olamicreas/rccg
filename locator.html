@@ -2,7 +2,7 @@
 <html>
 <head>
     <title></title>
-    <link rel="stylesheet" href="../style.css">
+   
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../rlogo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="rlogo.png">
 </head>
 <style>
     #mainNavbar {
@@ -394,263 +394,194 @@
 }
 
 .slide-1 {
-    background: url("sl.jpg");
+    background: url("pr.jpg");
     background-size:cover;
     
     
    
 }
 .slider-container {
-    min-height: 70%;
+    min-height: 100%;
 }
 
 .sc_services_item_text:hover{
     color: white;
 }
 
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Nunito", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #0e7d91;
-}
-
-.orange {
-  color: #FF7A01;
-}
-
-.montserrat {
-  font-family: "Montserrat", sans-serif;
+.slider-container {
+    min-width: 100%;
 }
 
 
-
-.container {
-  max-width: 1300px;
-  margin: 0px auto 0px auto;
-  padding: 0px 40px;
+.contact_us {
+    background-color: #f1f1f1;
+    padding: 120px 0px;
 }
 
-img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.contact_inner {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 20px 22px 44px #cccc;
+    border-radius: 25px;
 }
 
-@media (min-width: 1200px) and (max-width: 1441px) {
-  .container {
-    max-width: 1250px;
-    padding: 0px 36px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    padding: 0px 30px;
-  }
-}
-@media (max-width: 479px) {
-  .container {
-    padding: 0px 30px 0px 20px;
-  }
+.contact_field {
+    padding: 60px 340px 90px 100px;
 }
 
-.about-me {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.about-me .about-me-container {
-  position: relative;
-}
-@media (max-width: 960px) {
-  .about-me .about-me-container {
-    padding-bottom: 100px;
-  }
-}
-.about-me .about-me-container .about-me-title {
-  font-size: 55px;
-  color: #ecf0f3;
-  font-weight: 700;
-}
-@media (max-width: 500px) {
-  .about-me .about-me-container .about-me-title {
-    font-size: 30px;
-  }
+.right_conatct_social_icon {
+    height: 100%;
 }
 
-.about-me-flex-container {
-  margin-top: -25px;
-  margin-left: 150px;
-  left: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 960px) {
-  .about-me-flex-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-    gap: 50px;
-  }
-}
-@media (max-width: 500px) {
-  .about-me-flex-container {
-    margin-top: -5px;
-  }
-}
-.about-me-flex-container .about-me-image {
-  position: relative;
-  width: 400px;
-  height: 500px;
-}
-@media (max-width: 500px) {
-  .about-me-flex-container .about-me-image {
-    width: 300px;
-    height: 300px;
-  }
-}
-.about-me-flex-container .about-me-image .back-div {
-  position: absolute;
-  bottom: 0;
-  z-index: -3;
-  background-color: #013747;
-  width: 80%;
-  height: 80%;
-}
-.about-me-flex-container .about-me-image .black-image {
-  z-index: -1;
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  height: 100%;
-}
-.about-me-flex-container .about-me-image .black-image img {
-  height: 100%;
-}
-.about-me-flex-container .about-me-image .main-image {
-  width: 70%;
-  height: 75%;
-  overflow: hidden;
-  position: absolute;
-  left: 35%;
-  top: 1%;
-  box-shadow: rgb(0, 0, 0) 0px 7px 50px 0px;
-  transition: all 0.2s ease-out;
-}
-.about-me-flex-container .about-me-image .main-image:hover {
-  transform-origin: top center;
-  transform: scale(2);
-  border-radius: 25px;
-}
-.about-me-flex-container .about-me-image .main-image img {
-  transform-origin: center center;
-  transform: scale(1.26);
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 0.2s ease-out;
-}
-.about-me-flex-container .about-me-image .main-image img:hover {
-  transform: scale(1);
-}
-.about-me-flex-container .about-me-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  flex: 0 0 40%;
-}
-@media (max-width: 960px) {
-  .about-me-flex-container .about-me-content {
-    flex-direction: row-reverse;
-  }
-}
-.about-me-flex-container .about-me-content .log {
-  max-width: 200px;
-}
-.about-me-flex-container .about-me-content .log img {
-  filter: drop-shadow(0 0 25px rgb(0, 0, 0));
-}
-@media (max-width: 500px) {
-  .about-me-flex-container .about-me-content .log img {
-    transform: rotateZ(90deg);
-  }
-}
-.about-me-flex-container .about-me-content .text {
-  color: #ebf1f4;
-  font-weight: 600;
-  font-size: 18px;
-}
-@media (max-width: 500px) {
-  .about-me-flex-container .about-me-content .text {
-    font-size: 16px;
-  }
+.contact_field h3 {
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
-
-
-.mail-button {
-  display: flex;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  padding: 15px;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-out;
-}
-.mail-button a {
-  display: flex;
-}
-.mail-button img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  transition: all 0.2s ease-out;
+.contact_field p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
 }
 
-
-.mail-button2 {
-  background-color: #001925;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border: 10px solid #001925;
-}
-.mail-button2 img {
-  filter: invert(56%) sepia(42%) saturate(4795%) hue-rotate(360deg) brightness(103%) contrast(105%);
-}
-.mail-button2:hover {
-  background-color: #FF7A01;
-  border: 10px solid #FF7A01;
-}
-.mail-button2:hover img {
-  filter: unset;
-  transform: scale(1.5);
+.contact_field .form-control {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
 }
 
-.portfolio-link {
-  
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.contact_field .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #1325e8;
 }
-.portfolio-link a{
-  text-decoration: none;
-  color: white;
 
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
+.contact_field .form-control::placeholder {
+    font-size: 13px;
+    letter-spacing: 1px;
 }
+
+.contact_info_sec {
+    position: absolute;
+    background-color: #2d2d2d;
+    right: 1px;
+    top: 18%;
+    height: 340px;
+    width: 340px;
+    padding: 40px;
+    border-radius: 25px 0 0 25px;
+    color: white;
+}
+
+.contact_info_sec h4 {
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.info_single {
+    margin: 30px 0px;
+}
+
+.info_single i {
+    margin-right: 15px;
+}
+
+.info_single span {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+button.contact_form_submit {
+    background: #1c99b9;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.socil_item_inner li {
+    list-style: none;
+}
+
+.socil_item_inner li a {
+    color: #fff;
+    margin: 0px 15px;
+    font-size: 14px;
+}
+
+.socil_item_inner {
+    padding-bottom: 10px;
+}
+
+.map_sec {
+    padding: 50px 0px;
+}
+
+.map_inner h4, .map_inner p {
+    color: #000;
+    text-align: center;
+}
+
+.map_inner p {
+    font-size: 13px;
+}
+
+.map_bind {
+    margin-top: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    .contact_field {
+        padding: 30px;
+    }
+
+    .contact_info_sec {
+        position: static;
+        margin-top: 30px;
+        width: auto;
+        border-radius: 25px;
+        padding: 20px;
+    }
+
+    .contact_info_sec h4 {
+        font-size: 16px;
+    }
+
+    .info_single {
+        margin: 15px 0;
+    }
+
+    .info_single span {
+        font-size: 12px;
+    }
+
+    button.contact_form_submit {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .socil_item_inner li a {
+        font-size: 16px;
+    }
+
+    .map_inner h4, .map_inner p {
+        font-size: 16px;
+    }
+}
+
 
 
 </style>
@@ -659,20 +590,20 @@ img {
         <nav class="nav">
             <div class="container">
                 <div class="logo">
-                    <a href="../index.html"><img src="../rlogo.png" style="width: 70px;"></a>
+                    <a href="index.html"><img src="rlogo.png" style="width: 70px;"></a>
                 </div>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
-                        <li><a href="../index.html" style="font-size: 18px;">Home</a></li>
+                        <li><a href="index.html" style="font-size: 18px;">Home</a></li>
                         <li>
                             <div class="dropdown">
                                 <button class="dropbtn" style="font-size: 18px;">Who are we</button>
                                 <div class="dropdown-content">
-                                  <a href="history.html" style="color: black; font-size: 62%;">Our History</a>
-                                  <a href="service.html" style="color: black; font-size: 62%;">Our Service</a>
-                                  <a href="mission.html" style="color: black; font-size: 62%;">Our Missions</a>
-                                  <a href="values.html" style="color: black; font-size: 62%;">Our Values</a>
-                                  <a href="pastor.html" style="color: black; font-size: 62%;">Our Pastor</a>
+                                  <a href="service/history.html" target="tab" style="color: black; font-size: 62%;">Our History</a>
+                                  <a href="service/service.html" target="tab" style="color: black; font-size: 62%;">Our Service</a>
+                                  <a href="service/mission.html" target="tab" style="color: black; font-size: 62%;">Our Missions</a>
+                                  <a href="service/values.html" target="tab" style="color: black; font-size: 62%;">Our Values</a>
+                                  <a href="service/pastor.html" target="tab" style="color: black; font-size: 62%;">Our Pastor</a>
                                 </div>
                             </div>
                         </li>
@@ -680,8 +611,8 @@ img {
                             <div class="dropdown">
                                 <button class="dropbtn" style="font-size: 18px;">Sermon</button>
                                 <div class="dropdown-content">
-                                  <a href="../vid.html" style="color: black; font-size: 62%;">Video Sermon</a>
-                                  <a href="../pod.html" style="color: black; font-size: 62%;">Podcast</a>
+                                  <a href="vid.html" style="color: black; font-size: 62%;">Video Sermon</a>
+                                  <a href="pod.html" style="color: black; font-size: 62%;">Podcast Sermon</a>
                                   
                                 </div>
                             </div>
@@ -690,22 +621,22 @@ img {
                             <div class="dropdown">
                                 <button class="dropbtn" style="font-size: 18px;">Connect</button>
                                 <div class="dropdown-content">
-                                  <a href="../prreq.html" style="color: black; font-size: 62%;">Prayer request</a>
-                                  <a href="ytlive.html" style="color: black; font-size: 62%;">Live streaming</a>
+                                  <a href="prreq.html" style="color: black; font-size: 62%;">Prayer request</a>
+                                  <a href="service/ytlive.html" style="color: black; font-size: 62%;">Live streaming</a>
                                   
                                 </div>
                             </div>
                         </li>
-                        <li><a href="../contact.html" style="font-size: 18px;">Contact</a></li>
+                        <li><a href="#" style="font-size: 18px;">Contact</a></li>
                         
                     </ul>
                 </div>
                 <div class="" style="float: right;">
                    
-                  <button><a href="donate.html" style="color: black; text-decoration: none;">Donate</a></button>
-                  
-              </div>
-              <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
+                    <button><a href="donate.html" style="color: black; text-decoration: none;">Donate</a></button>
+                    
+                </div>
+                <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
                     <i></i>
                     <i></i>
                     <i></i>
@@ -722,7 +653,7 @@ img {
                     <div class="container">
                         <div class="slider-container">
                             <div class="animated-area">
-                                <p class="slider-title cssanimation sequence leFadeInLeft pt" style="color: white;">Our Pastor</p>
+                                <p class="slider-title cssanimation sequence leFadeInLeft pt" style="color: white;">Locate Us</p>
                             </div>
                            
                             <div id="space">
@@ -739,58 +670,40 @@ img {
         </div>
     </section>
 
-    <section class="about-me" id="about-me">
+
+ 
+
+    <section class="map_sec  bg-gray">
         <div class="container">
-          <div class="about-me-container">
-            <div class="about-me-title">
-              About <br> Pastor Keith
-            </div>
-      
-            <div class="about-me-flex-container">
-              <div class="about-me-image">
-                <div class="back-div"></div>
-                <div class="black-image"><img src="pastor.jpg" alt="black"></div>
-                <div class="main-image"><img src="pastor.jpg" alt="smit"></div>
-              </div>
-              <div class="about-me-content">
-      
-                <div class="logo" style="min-width: 10vh;"><img src="../rccg.png" alt=""></div>
-      
-                <div class="text">
-                    Pastor Keith Locke is a child of the Most High God, a husband, father, grandfather and a Christian friend.
-                    he gave his life to Christ in his early teenage years while he was attending a Moffettville Baptist Church in the small town of Wilmer, Alabama. By God’s grace after years of walking in my comfort zone, he became an active member in church and participating in awesome Sunday School class.
-                    he was ordained as a deacon in 2004 at Ebenezer Missionary Baptist Church in Mobile, Alabama. he was youth Sunday School Teacher, Wednesday night youth Bible study, and served as church clerk. He also obtained student and teacher evangelism training from Childhood Evangelism Fellowship.
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="map_inner">
+                        <h2 style="text-align: center; font-weight: bold;">Find Us on Google Map</h2>
                         
-                  <br><br>
-      
-                  This is a true saying, If a man desires the office of a bishop, he desireth a good work. 1 Timothy 3:1 he received a license to preach after a noted sermon December 3, 2017. he was asked to pastor the Redeem Christian Church of God Jesus House Mobile January 2018.
-                    he has held the responsibilities as an industrial engineer, project manager, sports coach, park to college, and teacher from assistant to college instructor. He earned a bachelor of science degree in industrial engineering in 2004. He has been given the opportunity to share the gospel many people of various ages.
-                    he and Sister Locke have been married since 1990. They have two sons, Keith (Rafiqa) and Kendall and one daughter, Danielle (Delano), and 5 grandchildren.
+                        <div class="map_bind">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.9397243969274!2d-88.15490972555264!3d30.663825774617553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a4d234847ec6d%3A0x42acd0cf17f05b68!2s444%20Azalea%20Rd%2C%20Mobile%2C%20AL%2036609%2C%20USA!5e0!3m2!1sen!2sng!4v1708861933990!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-      
-            <div class="mail-button mail-button2">
-              <a href="mailto:olamicreas@gmail.com"><img src="r.jpeg" alt="mail"></a>
-            </div>
-      
-          </div>
-      
         </div>
-      </section>
-      <br><br>
-     
+    </section>
+
+  
+    
+
+
     <div class="loader" style="display: flex; align-items: center; justify-content: center;">
         <div class="u-loading">
             <div class="u-loading__symbol" >
-              <img src="../rccg.png">
+              <img src="rccg.png">
             </div>
         </div>
     </div>
 
     <footer style="font-size: 16px;">
         <div>
-            
+             <span class="logo"><img src="rccg.png"></span>
         </div>
     
         <div class="row">
@@ -810,11 +723,12 @@ img {
                      <span class="footer-cat">Home</span>
                  </div>
                  <ul class="footer-cat-links">
-                     <li><a href="../index.html"><span>Home</span></a></li>
-                     <li><a href="history.html"><span>Our History</span></a></li>
-                     <li><a href="mission.html"><span>Our Mission</span></a></li>
-                     <li><a href="values.html"><span>Our Values</span></a></li>
-                     <li><a href="pastor.html"><span>Our Pastor</span></a></li>
+                     <li><a href="index.html"><span>Home</span></a></li>
+                     <li><a href="service/history.html"><span>Our History</span></a></li>
+                     <li><a href="service/mission.html"><span>Our Mission</span></a></li>
+                     <li><a href="service/values.html"><span>Our Values</span></a></li>
+                     <li><a href="service/pastor.html"><span>Our Pastor</span></a></li>
+                    
                  </ul>
              </div>
              <div class="kol">
@@ -823,10 +737,10 @@ img {
                      <span class="footer-cat">Quick Links</span>
                  </div>
                  <ul class="footer-cat-links">
-                     <li><a href="../donate.html"><span>Donate</span></a></li>
-                     <li><a href="../vid.html"><span>Video Sermon</span></a></li>
-                     <li><a href="../pod.html"><span>Podcast Sermon</span></a></li>
-                     <li><a href="../contact.html"><span>Contact Us</span></a></li>
+                     <li><a href="donate.html"><span>Donate</span></a></li>
+                     <li><a href="vid.html"><span>Video Sermon</span></a></li>
+                     <li><a href="pod.html"><span>Podcast Sermon</span></a></li>
+                     <li><a href="contact.html"><span>Contact Us</span></a></li>
                  </ul>
              </div>
              <div class="kol" id="newsletter">
@@ -933,7 +847,7 @@ img {
                         $(this).addClass('fade-in');
                     }
                 });
-                $('img').each(function () {
+                $('.ns').each(function () {
                     var offset = $(this).offset().top;
 
                     if (scrollPos + windowHeight - 50 > offset) {
