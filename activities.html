@@ -245,34 +245,6 @@
   border: none;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  width: 30%;
-  border-radius: 15px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: white; opacity: 0.3; color: #000;}
 
 
 .donate {
@@ -820,59 +792,124 @@ button.contact_form_submit {
       color: floralwhite;
       margin: 0;
     }
+
+
+.dropbtn {
+  background: transparent;
+  color: white;
+  
+  border: none;
+}
+.dropbtn:hover{
+    color: rgb(255, 189, 17);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 111;
+  width: 40%;
+  margin: 0;
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {padding-left: 30px;}
+
+.dropdown:hover .dropdown-content {display: block;color: rgb(255, 189, 17);}
+
+.dropdown:hover .dropbtn {color: rgb(255, 189, 17);}
+
+.slider-title {
+            
+            margin-top: 70%;
+        }
+    @media only screen and (min-width : 1024px) {
+     
+        .slider-title {
+            font-size: 70px;
+            margin-top: 15%;
+        }
+        .dropdown-content {
+            width: 200px;
+        }
+    }
+
+
+
 </style>
 <body>
     <nav id="bar" class=" fixed-top">
         <nav class="nav">
-            <div class="container">
+            <div class="" style="min-width: 100%;">
                 <div class="logo">
-                    <a href="index.html"><img src="rlogo.png" style="width: 70px;"></a>
+                    <a href="#"><img src="rlogo.png" width="100" height="5"></a>
                 </div>
+                
                 <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="index.html" style="font-size: 18px;">Home</a></li>
+                    <ul class="navlinks" >
+                        <li><a href="index.html">Home</a></li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Who are we</button>
+                                <a class="dropbtn">Who are we</a>
                                 <div class="dropdown-content">
-                                  <a href="service/history.html" target="tab" style="color: black; font-size: 62%;">Our History</a>
-                                  <a href="service/service.html" target="tab" style="color: black; font-size: 62%;">Our Service</a>
-                                  <a href="service/mission.html" target="tab" style="color: black; font-size: 62%;">Our Missions</a>
-                                  <a href="service/values.html" target="tab" style="color: black; font-size: 62%;">Our Values</a>
-                                  <a href="service/pastor.html" target="tab" style="color: black; font-size: 62%;">Our Pastor</a>
+                                  <a href="service/history.html"  style="color: black; font-size: 72%;">Our History</a>
+                                  <a href="service/service.html"  style="color: black; font-size: 72%;">Our Services</a>
+                                  <a href="service/mission.html"  style="color: black; font-size: 72%;">Our Mission</a>
+                                  <a href="service/values.html"  style="color: black; font-size: 72%;">Our Values</a>
+                                  <a href="service/pr.html"  style="color: black; font-size: 72%;">Our Priorities</a>
+                                  <a href="service/pastor.html"  style="color: black; font-size: 72%;">Our Pastor</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Sermon</button>
+                                <a class="dropbtn">Sermon</a>
                                 <div class="dropdown-content">
-                                  <a href="vid.html" style="color: black; font-size: 62%;">Video Sermon</a>
-                                  <a href="pod.html" style="color: black; font-size: 62%;">Podcast Sermon</a>
+                                  <a href="vid.html" target="tab" style="color: black; font-size: 72%;">Video Sermon</a>
+                                  <a href="pod.html" target="tab" style="color: black; font-size: 72%;">Podcast Sermon</a>
                                   
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Connect</button>
+                                <a class="dropbtn">Connect</a>
                                 <div class="dropdown-content">
-                                  <a href="prreq.html" style="color: black; font-size: 62%;">Prayer request</a>
-                                  <a href="service/ytlive.html" style="color: black; font-size: 62%;">Live streaming</a>
+                                  <a href="prreq.html" target="tab" style="color: black; font-size: 72%;">Prayer request</a>
+                                  <a href="service/ytlive.html" target="tab" style="color: black; font-size: 72%;">Live streaming</a>
+                                  <a href="activities.html" target="tab" style="color: black; font-size: 72%;">Activities</a>
                                   
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#" style="font-size: 18px;">Contact</a></li>
+                        <li><a href="contact.html" target="tab">Contact</a></li>
                         
                     </ul>
                 </div>
                 <div class="" style="float: right;">
                    
-                  <button><a href="donate.html" style="color: black; text-decoration: none;">Donate</a></button>
-                  
-              </div>
-              <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
+                    <button><a href="donate.html" style="color: black; text-decoration: none;">Donate</a></button>
+                    
+                </div>
+
+                <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
                     <i></i>
                     <i></i>
                     <i></i>
@@ -905,7 +942,7 @@ button.contact_form_submit {
             
         </div>
     </section>
-
+    <button class="back-to-top" type="button"></button>
     <table class="parentmar">
       <tr>
         <td class="childmar">
@@ -976,87 +1013,94 @@ button.contact_form_submit {
       </div>
       </div>
 
-    <footer style="font-size: 16px; margin-top: 12%;">
-        <div>
-             <span class="logo"><img src="rccg.png"></span>
-        </div>
-    
-        <div class="row">
-             <div class="kol">                
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Get in Touch</span>
-                 </div>
-                 <ul class="footer-cat-links">
-                     <li><a href=""><span><i class="fa fa-inbox"></i> info@rccgmobile.org</span></a></li>
-                     <li><a href=""><span><i class="fa fa-phone"></i> +251-378-5182</span></a></li>
-                 </ul>
-             </div>
-             <div class="kol">
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Home</span>
-                 </div>
-                 <ul class="footer-cat-links">
-                     <li><a href="index.html"><span>Home</span></a></li>
-                     <li><a href="service/history.html"><span>Our History</span></a></li>
-                     <li><a href="service/mission.html"><span>Our Mission</span></a></li>
-                     <li><a href="service/values.html"><span>Our Values</span></a></li>
-                     <li><a href="service/pastor.html"><span>Our Pastor</span></a></li>
-                    
-                 </ul>
-             </div>
-             <div class="kol">
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Quick Links</span>
-                 </div>
-                 <ul class="footer-cat-links">
-                     <li><a href="donate.html"><span>Donate</span></a></li>
-                     <li><a href="vid.html"><span>Video Sermon</span></a></li>
-                     <li><a href="pod.html"><span>Podcast Sermon</span></a></li>
-                     <li><a href="contact.html"><span>Contact Us</span></a></li>
-                 </ul>
-             </div>
-             <div class="kol" id="newsletter">
-                 <span> RCCG Jesus House Mobile.</span>
-                 <form id="subscribe">
-                     <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
-                     <input type="submit" value="Subscribe" id="btn-scribe"/>
-                 </form>
-                 
-                 <div class="social-links social-2">
-                     <a href=""><i class="fa fa-facebook-f"></i></a>
-                     <a href=""><i class="fa fa-twitter"></i></a>
-                     <a href=""><i class="fa fa-youtube"></i></a>
-                     
-                 </div>
-    
-                 <div id="address">
-                     <span>Church Location</span>
-                     <ul>
-                         <li>
-                             <i class="fa fa-building"></i>
-                             <div>Los Angeles<br/>
-                                444 Azalea Rd, Ste C, Mobile, AL 36609</div>
-                         </li>
-                         
-                     </ul>
-                 </div>
-                 
-             </div>
-             <div class="social-links social-1 colu">
-                 <a href=""><i class="fa fa-facebook-f"></i></a>
-                 <a href=""><i class="fa fa-twitter"></i></a>
-                 <a href=""><i class="fa fa-youtube"></i></a>
-                 
-             </div>
-        </div>
-        <div id="copyright">
-            &copy; 2024 All Rights Reserved. RCCG Jesus House Mobile.
-        </div>
-     
-     </footer>
+
+
+      <footer style="font-size: 16px; margin-top: 12%;">
+          <div>
+              <span class="logo"><img src="rlogo.png"></span>
+          </div>
+      
+          <div class="row">
+              <div class="kol">                
+                  <div class="link-cat" onclick="footerToggle(this)">
+                      <span class="footer-toggle"></span>
+                      <span class="footer-cat">Get in Touch</span>
+                  </div>
+                  <ul class="footer-cat-links">
+                      <li><a href=""><span><i class="fa fa-inbox"></i> info@rccgmobile.org</span></a></li>
+                      <li><a href=""><span><i class="fa fa-phone"></i> +251-378-5182</span></a></li>
+                  </ul>
+              </div>
+              <div class="kol">
+                  <div class="link-cat" onclick="footerToggle(this)">
+                      <span class="footer-toggle"></span>
+                      <span class="footer-cat">Home</span>
+                  </div>
+                  <ul class="footer-cat-links">
+                      
+                      <li><a href="service/history.html"><span>Our History</span></a></li>
+                      <li><a href="service/service.html"><span>Our Services</span></a></li>
+                      <li><a href="service/mission.html"><span>Our Mission</span></a></li>
+                      <li><a href="service/pr.html"><span>Our Priorities</span></a></li>
+                      <li><a href="service/values.html"><span>Our Values</span></a></li>
+                      <li><a href="service/pastor.html"><span>Our Pastor</span></a></li>
+                      
+                  </ul>
+              </div>
+              <div class="kol">
+                  <div class="link-cat" onclick="footerToggle(this)">
+                      <span class="footer-toggle"></span>
+                      <span class="footer-cat">Quick Links</span>
+                  </div>
+                  <ul class="footer-cat-links">
+                      <li><a href="donate.html"><span>Donate</span></a></li>
+                      <li><a href="vid.html"><span>Video Sermon</span></a></li>
+                      <li><a href="pod.html"><span>Podcast Sermon</span></a></li>
+                      <li><a href="activities.html"><span>Activities</span></a></li>
+                      <li><a href="gallery.html"><span>Gallery</span></a></li>
+                      <li><a href="contact.html"><span>Contact Us</span></a></li>
+                  </ul>
+              </div>
+              <div class="kol" id="newsletter">
+                  <span> RCCG Jesus House Mobile.</span>
+                  <form id="subscribe">
+                      <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
+                      <input type="submit" value="Subscribe" id="btn-scribe"/>
+                  </form>
+                  
+                  <div class="social-links social-2">
+                      <a href=""><i class="fa fa-facebook-f"></i></a>
+                      <a href=""><i class="fa fa-twitter"></i></a>
+                      <a href=""><i class="fa fa-youtube"></i></a>
+                      
+                  </div>
+      
+                  <div id="address">
+                      <span>Church Location</span>
+                      <ul>
+                          <li>
+                              <i class="fa fa-building"></i>
+                              
+                                  444 Azalea Rd, Ste C, Mobile, AL 36609
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  
+              </div>
+              <div class="social-links social-1 colu">
+                  <a href=""><i class="fa fa-facebook-f"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-youtube"></i></a>
+                  
+              </div>
+          </div>
+          <div id="copyright">
+              &copy; 2024 All Rights Reserved. RCCG Jesus House Mobile.
+          </div>
+      
+      </footer>
+
 
     <script>
         $(function () {
@@ -1141,6 +1185,26 @@ button.contact_form_submit {
 
         });
 
+    </script>
+    <script>
+      // Back to top
+      var amountScrolled = 200;
+      var amountScrolledNav = 25;
+
+      $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+          $('button.back-to-top').addClass('show');
+        } else {
+          $('button.back-to-top').removeClass('show');
+        }
+      });
+
+      $('button.back-to-top').click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
     </script>
 
 </body>

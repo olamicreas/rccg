@@ -137,7 +137,7 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: white; opacity: 0.3; color: #000;}
+.dropdown:hover .dropbtn {color: rgb(255, 189, 17);}
 
 
 
@@ -390,7 +390,7 @@
 
 /* Modal content */
 .modal-content {
-  background-color: #171b24;
+  
   margin: 10% auto; /* Center modal vertically and horizontally */
   padding: 20px;
   border: 1px solid #888;
@@ -412,56 +412,155 @@
   cursor: pointer;
 }
 
+.slider-title {
+            
+            margin-top: 70%;
+        }
+    @media only screen and (min-width : 1024px) {
+     
+        .slider-title {
+            font-size: 70px;
+            margin-top: 15%;
+        }
+        .dropdown-content {
+            width: 200px;
+        }
+    }
 
 
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .modal-content {
+      background-color: #171b24;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation-name: modalopen;
+      animation-duration: 0.4s;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .donate h2, .donate-submit button {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .donate-amount-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .donate-amount-box input {
+      width: calc(100% - 10px);
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 16px;
+      
+      
+    }
+    .anonymous, .agree {
+      margin-bottom: 10px;
+    }
+    .terms {
+      margin-bottom: 10px;
+    }
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      .donate-amount-box input {
+        width: 100%;
+      }
+    }
+    /* Animation */
+    @keyframes modalopen {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
 </style>
 <body>
     <nav id="bar" class=" fixed-top">
         <nav class="nav">
-            <div class="container">
+            <div class="" style="min-width: 100%;">
                 <div class="logo">
-                    <a href="index.html"><img src="rlogo.png" style="width: 70px;"></a>
+                    <a href="#"><img src="rlogo.png" width="100" height="5"></a>
                 </div>
+                
                 <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="index.html" style="font-size: 18px;">Home</a></li>
+                    <ul class="navlinks" >
+                        <li><a href="index.html">Home</a></li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Who are we</button>
+                                <a class="dropbtn">Who are we</a>
                                 <div class="dropdown-content">
-                                  <a href="service/history.html" target="tab" style="color: black; font-size: 62%;">Our History</a>
-                                  <a href="service/service.html" target="tab" style="color: black; font-size: 62%;">Our Service</a>
-                                  <a href="service/mission.html" target="tab" style="color: black; font-size: 62%;">Our Missions</a>
-                                  <a href="service/values.html" target="tab" style="color: black; font-size: 62%;">Our Values</a>
-                                  <a href="service/pastor.html" target="tab" style="color: black; font-size: 62%;">Our Pastor</a>
+                                  <a href="service/history.html"  style="color: black; font-size: 72%;">Our History</a>
+                                  <a href="service/service.html"  style="color: black; font-size: 72%;">Our Services</a>
+                                  <a href="service/mission.html"  style="color: black; font-size: 72%;">Our Mission</a>
+                                  <a href="service/values.html"  style="color: black; font-size: 72%;">Our Values</a>
+                                  <a href="service/pr.html"  style="color: black; font-size: 72%;">Our Priorities</a>
+                                  <a href="service/pastor.html"  style="color: black; font-size: 72%;">Our Pastor</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Sermon</button>
+                                <a class="dropbtn">Sermon</a>
                                 <div class="dropdown-content">
-                                  <a href="vid.html" style="color: black; font-size: 62%;">Video Sermon</a>
-                                  <a href="pod.html" style="color: black; font-size: 62%;">Podcast Sermon</a>
+                                  <a href="vid.html" target="tab" style="color: black; font-size: 72%;">Video Sermon</a>
+                                  <a href="pod.html" target="tab" style="color: black; font-size: 72%;">Podcast Sermon</a>
                                   
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Connect</button>
+                                <a class="dropbtn">Connect</a>
                                 <div class="dropdown-content">
-                                  <a href="prreq.html" style="color: black; font-size: 62%;">Prayer request</a>
-                                  <a href="service/ytlive.html" style="color: black; font-size: 62%;">Live streaming</a>
+                                  <a href="prreq.html" target="tab" style="color: black; font-size: 72%;">Prayer request</a>
+                                  <a href="service/ytlive.html" target="tab" style="color: black; font-size: 72%;">Live streaming</a>
+                                  <a href="activities.html" target="tab" style="color: black; font-size: 72%;">Activities</a>
                                   
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#" style="font-size: 18px;">Contact</a></li>
+                        <li><a href="contact.html" target="tab">Contact</a></li>
                         
                     </ul>
                 </div>
-                <span class="navTrigger" style="margin-top: 6%;">
+                <div class="" style="float: right;">
+                   
+                    <button><a href="donate.html" style="color: black; text-decoration: none;">Donate</a></button>
+                    
+                </div>
+
+                <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
                     <i></i>
                     <i></i>
                     <i></i>
@@ -521,7 +620,58 @@
         
     </section>
 
+    <div id="myModal" class="modal" style="display: none; justify-content: center;">
+        <div class="donate modal-content">
+            <!-- Modal content -->
+            <span class="close">&times;</span>
+            <div class="donate-black">
+                <h2><span>$</span> Donate</h2>
+                <p>Your contribution is vital to the success of our initiative.<br>Choose the amount you wish to donate with PayPal, as a one-time or monthly payment.</p>
+            </div>
+            <div class="donate-blue">
+                <h3>Donation amount*</h3>
+                <div class="donate-amount-box">
+                    
+                    <div class="denomination-other">
+                        <input autocomplete="off" type="text" name="amount" value="" placeholder="Enter amount">
+                    </div>
+                    <input style="background-color: #ddd;" type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    <input style="background-color: #ddd;" type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    <input style="background-color: #ddd;" type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                    <input style="background-color: #ddd;" type="email" id="email" name="email" placeholder="Email Address">
+                    <div class="anonymous">
+                      <input style="background-color: #ddd;" type="checkbox" id="anonymous" name="anonymous">
+                      <label for="anonymous">Make this an anonymous donation</label>
+                    </div>
+                    <div class="agree">
+                      <input style="background-color: #ddd;" type="checkbox" id="agree" name="agree">
+                      <label for="agree">Agree to Terms</label>
+                    </div>
+                </div>
+                <div class="terms">
+                    <p>By agreeing to the terms your submitted data is being collected and stored. Stored data will not be shared with any third party.</p>
+                </div>
+            </div>
 
+            <div class="donate-blue donate-payment">
+                <h3>Payment Method</h3>
+                <div>
+                    <label>
+                      <input type="radio" name="payment" value="paypal" checked="checked" autocomplete="off">PayPal
+                    </label>
+                    <label>
+                      <input type="radio" name="payment" value="crypto" autocomplete="off">Debit or Credit Card
+                    </label>
+                </div>
+                <div class="donate-submit">
+                    <form>
+                    <button type="submit" autocomplete="off" id="bbtn">Donate $5</button>
+                    </form>
+                    <p><small>Please note that contributions are not tax-deductible.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <section id="intro" class="">
         <div id="intro-info">
             <div>
@@ -567,134 +717,101 @@
     
         
         </section>
-        <div id="myModal" class="modal" style="display: none; justify-content: center;">
-            <div class="donate modal-content">
-                <!-- Modal content -->
-                <span class="close">&times;</span>
-                <div class="donate-black">
-                    <h2><span>$</span> Donate</h2>
-                    <p>Your contribution is vital to the success of our initiative.<br>Choose the amount you wish to donate with PayPal, as a one-time or monthly payment.</p>
-                </div>
-                <div class="donate-blue">
-                    <h3>Donation amount*</h3>
-                    <div class="donate-amount-box">
-                        
-                        <div class="denomination-other">
-                            <input autocomplete="off" type="text" name="amount" value="" placeholder="Enter amount">
-                        </div>
-                    </div>
-                </div>
-             
-                <div class="donate-blue donate-payment">
-                    <h3>Payment Method</h3>
-                    <div>
-                        <label>
-                          <input type="radio" name="payment" value="paypal" checked="checked" autocomplete="off">PayPal
-                        </label>
-                        <label>
-                          <input type="radio" name="payment" value="crypto" autocomplete="off">Cryptocurrency
-                        </label>
-                    </div>
-                    <div class="donate-submit">
-                        <form>
-                        <button type="submit" autocomplete="off" id="bbtn">Donate $5</button>
-                        </form>
-                        <p><small>Please note that contributions are not tax-deductible.</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+   
         <!-- Button to open the modal -->
     
+
+
+    
+
+        <button class="back-to-top" type="button"></button>
+
+
+        <footer style="font-size: 16px; margin-top: 12%;">
+            <div>
+                 <span class="logo"><img src="rlogo.png"></span>
+            </div>
         
-
-    
-
-
-
-
-    <footer style="font-size: 16px;">
-        <div>
-             <span class="logo"><img src="rccg.png"></span>
-        </div>
-    
-        <div class="row">
-             <div class="kol">                
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Get in Touch</span>
+            <div class="row">
+                 <div class="kol">                
+                     <div class="link-cat" onclick="footerToggle(this)">
+                         <span class="footer-toggle"></span>
+                         <span class="footer-cat">Get in Touch</span>
+                     </div>
+                     <ul class="footer-cat-links">
+                         <li><a href=""><span><i class="fa fa-inbox"></i> info@rccgmobile.org</span></a></li>
+                         <li><a href=""><span><i class="fa fa-phone"></i> +251-378-5182</span></a></li>
+                     </ul>
                  </div>
-                 <ul class="footer-cat-links">
-                     <li><a href=""><span><i class="fa fa-inbox"></i> info@rccgmobile.org</span></a></li>
-                     <li><a href=""><span><i class="fa fa-phone"></i> +251-378-5182</span></a></li>
-                 </ul>
-             </div>
-             <div class="kol">
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Home</span>
+                 <div class="kol">
+                     <div class="link-cat" onclick="footerToggle(this)">
+                         <span class="footer-toggle"></span>
+                         <span class="footer-cat">Home</span>
+                     </div>
+                     <ul class="footer-cat-links">
+                         
+                         <li><a href="service/history.html"><span>Our History</span></a></li>
+                         <li><a href="service/service.html"><span>Our Services</span></a></li>
+                         <li><a href="service/mission.html"><span>Our Mission</span></a></li>
+                         <li><a href="service/pr.html"><span>Our Priorities</span></a></li>
+                         <li><a href="service/values.html"><span>Our Values</span></a></li>
+                         <li><a href="service/pastor.html"><span>Our Pastor</span></a></li>
+                        
+                     </ul>
                  </div>
-                 <ul class="footer-cat-links">
-                     <li><a href="index.html"><span>Home</span></a></li>
-                     <li><a href="service/history.html"><span>Our History</span></a></li>
-                     <li><a href="service/mission.html"><span>Our Mission</span></a></li>
-                     <li><a href="service/values.html"><span>Our Values</span></a></li>
-                     <li><a href="service/pastor.html"><span>Our Pastor</span></a></li>
-                    
-                 </ul>
-             </div>
-             <div class="kol">
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Quick Links</span>
+                 <div class="kol">
+                     <div class="link-cat" onclick="footerToggle(this)">
+                         <span class="footer-toggle"></span>
+                         <span class="footer-cat">Quick Links</span>
+                     </div>
+                     <ul class="footer-cat-links">
+                         <li><a href="donate.html"><span>Donate</span></a></li>
+                         <li><a href="vid.html"><span>Video Sermon</span></a></li>
+                         <li><a href="pod.html"><span>Podcast Sermon</span></a></li>
+                         <li><a href="activities.html"><span>Activities</span></a></li>
+                         <li><a href="gallery.html"><span>Gallery</span></a></li>
+                         <li><a href="contact.html"><span>Contact Us</span></a></li>
+                     </ul>
                  </div>
-                 <ul class="footer-cat-links">
-                     <li><a href="donate.html"><span>Donate</span></a></li>
-                     <li><a href="vid.html"><span>Video Sermon</span></a></li>
-                     <li><a href="pod.html"><span>Podcast Sermon</span></a></li>
-                     <li><a href="contact.html"><span>Contact Us</span></a></li>
-                 </ul>
-             </div>
-             <div class="kol" id="newsletter">
-                 <span> RCCG Jesus House Mobile.</span>
-                 <form id="subscribe">
-                     <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
-                     <input type="submit" value="Subscribe" id="btn-scribe"/>
-                 </form>
-                 
-                 <div class="social-links social-2">
+                 <div class="kol" id="newsletter">
+                     <span> RCCG Jesus House Mobile.</span>
+                     <form id="subscribe">
+                         <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
+                         <input type="submit" value="Subscribe" id="btn-scribe"/>
+                     </form>
+                     
+                     <div class="social-links social-2">
+                         <a href=""><i class="fa fa-facebook-f"></i></a>
+                         <a href=""><i class="fa fa-twitter"></i></a>
+                         <a href=""><i class="fa fa-youtube"></i></a>
+                         
+                     </div>
+        
+                     <div id="address">
+                         <span>Church Location</span>
+                         <ul>
+                             <li>
+                                 <i class="fa fa-building"></i>
+                                 
+                                    444 Azalea Rd, Ste C, Mobile, AL 36609
+                             </li>
+                             
+                         </ul>
+                     </div>
+                     
+                 </div>
+                 <div class="social-links social-1 colu">
                      <a href=""><i class="fa fa-facebook-f"></i></a>
                      <a href=""><i class="fa fa-twitter"></i></a>
                      <a href=""><i class="fa fa-youtube"></i></a>
                      
                  </div>
-    
-                 <div id="address">
-                     <span>Church Location</span>
-                     <ul>
-                         <li>
-                             <i class="fa fa-building"></i>
-                             <div>Los Angeles<br/>
-                                444 Azalea Rd, Ste C, Mobile, AL 36609</div>
-                         </li>
-                         
-                     </ul>
-                 </div>
-                 
-             </div>
-             <div class="social-links social-1 colu">
-                 <a href=""><i class="fa fa-facebook-f"></i></a>
-                 <a href=""><i class="fa fa-twitter"></i></a>
-                 <a href=""><i class="fa fa-youtube"></i></a>
-                 
-             </div>
-        </div>
-        <div id="copyright">
-            &copy; 2024 All Rights Reserved. RCCG Jesus House Mobile.
-        </div>
-     
-     </footer>
+            </div>
+            <div id="copyright">
+                &copy; 2024 All Rights Reserved. RCCG Jesus House Mobile.
+            </div>
+         
+         </footer>
 
     <script>
         $(function () {
@@ -813,6 +930,8 @@
         var modal = document.getElementById("myModal");
         var span = document.querySelector("#myModal .close");
         var buttons = document.querySelectorAll("#openModalBtn");
+        var submitBtn = document.querySelector("#myModal #bbtn");
+
 
         // Function to open the modal
         function openModal() {
@@ -838,11 +957,68 @@
         buttons.forEach(function(button) {
             button.addEventListener("click", openModal);
         });
+
+
+        submitBtn.addEventListener("click", function(event) {
+            event.preventDefault();
+            // Validate form fields
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var email = document.getElementById("email").value;
+            var anonymous = document.getElementById("anonymous").checked;
+            var agree = document.getElementById("agree").checked;
+
+            if (firstName === "" || lastName === "") {
+                alert("First Name and Last Name are required.");
+                return;
+            }
+            if(!agree) {
+                alert("Please agree to the Terms.");
+                return;
+            }
+
+            // Process the donation submission
+            // You can send this data to your server or handle it accordingly
+            console.log("First Name:", firstName);
+            console.log("Last Name:", lastName);
+            console.log("Phone Number:", phoneNumber);
+            console.log("Email:", email);
+            console.log("Anonymous:", anonymous);
+            console.log("Agree to Terms:", agree);
+
+            // Close the modal after submission
+            closeModal();
+        });
+
+        
+
+
     });
 
 
 </script>
-    
+<script>
+    // Back to top
+    var amountScrolled = 200;
+    var amountScrolledNav = 25;
+
+    $(window).scroll(function() {
+      if ( $(window).scrollTop() > amountScrolled ) {
+        $('button.back-to-top').addClass('show');
+      } else {
+        $('button.back-to-top').removeClass('show');
+      }
+    });
+
+    $('button.back-to-top').click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+</script>    
 
 </body>
 </html>
+

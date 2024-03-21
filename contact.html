@@ -98,6 +98,23 @@
         height: 100%!important;
     }
 
+
+    .slider-title {
+            
+            margin-top: 70%;
+        }
+    @media only screen and (min-width : 1024px) {
+     
+        .slider-title {
+            font-size: 50px;
+            margin-top: 20%;
+        }
+        .dropdown-content {
+            width: 200px;
+        }
+    }
+
+
     .payment-box{
   /*Border settings*/
   border: 0.35rem solid;
@@ -270,9 +287,9 @@
 
 .dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;color: rgb(255, 189, 17);}
 
-.dropdown:hover .dropbtn {background-color: white; opacity: 0.3; color: #000;}
+.dropdown:hover .dropbtn {color: rgb(255, 189, 17);}
 
 
 .donate {
@@ -586,46 +603,49 @@ button.contact_form_submit {
 <body>
     <nav id="bar" class=" fixed-top">
         <nav class="nav">
-            <div class="container">
+            <div class="" style="min-width: 100%;">
                 <div class="logo">
-                    <a href="index.html"><img src="rlogo.png" style="width: 70px;"></a>
+                    <a href="#"><img src="rlogo.png" width="100" height="5"></a>
                 </div>
+                
                 <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="index.html" style="font-size: 18px;">Home</a></li>
+                    <ul class="navlinks" >
+                        <li><a href="index.html">Home</a></li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Who are we</button>
+                                <a class="dropbtn">Who are we</a>
                                 <div class="dropdown-content">
-                                  <a href="service/history.html" target="tab" style="color: black; font-size: 62%;">Our History</a>
-                                  <a href="service/service.html" target="tab" style="color: black; font-size: 62%;">Our Service</a>
-                                  <a href="service/mission.html" target="tab" style="color: black; font-size: 62%;">Our Missions</a>
-                                  <a href="service/values.html" target="tab" style="color: black; font-size: 62%;">Our Values</a>
-                                  <a href="service/pastor.html" target="tab" style="color: black; font-size: 62%;">Our Pastor</a>
+                                  <a href="service/history.html"  style="color: black; font-size: 72%;">Our History</a>
+                                  <a href="service/service.html"  style="color: black; font-size: 72%;">Our Services</a>
+                                  <a href="service/mission.html"  style="color: black; font-size: 72%;">Our Mission</a>
+                                  <a href="service/values.html"  style="color: black; font-size: 72%;">Our Values</a>
+                                  <a href="service/pr.html"  style="color: black; font-size: 72%;">Our Priorities</a>
+                                  <a href="service/pastor.html"  style="color: black; font-size: 72%;">Our Pastor</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Sermon</button>
+                                <a class="dropbtn">Sermon</a>
                                 <div class="dropdown-content">
-                                  <a href="vid.html" style="color: black; font-size: 62%;">Video Sermon</a>
-                                  <a href="pod.html" style="color: black; font-size: 62%;">Podcast Sermon</a>
+                                  <a href="vid.html" target="tab" style="color: black; font-size: 72%;">Video Sermon</a>
+                                  <a href="pod.html" target="tab" style="color: black; font-size: 72%;">Podcast Sermon</a>
                                   
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Connect</button>
+                                <a class="dropbtn">Connect</a>
                                 <div class="dropdown-content">
-                                  <a href="prreq.html" style="color: black; font-size: 62%;">Prayer request</a>
-                                  <a href="service/ytlive.html" style="color: black; font-size: 62%;">Live streaming</a>
+                                  <a href="prreq.html" target="tab" style="color: black; font-size: 72%;">Prayer request</a>
+                                  <a href="service/ytlive.html" target="tab" style="color: black; font-size: 72%;">Live streaming</a>
+                                  <a href="activities.html" target="tab" style="color: black; font-size: 72%;">Activities</a>
                                   
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#" style="font-size: 18px;">Contact</a></li>
+                        <li><a href="contact.html" target="tab">Contact</a></li>
                         
                     </ul>
                 </div>
@@ -634,6 +654,7 @@ button.contact_form_submit {
                     <button><a href="donate.html" style="color: black; text-decoration: none;">Donate</a></button>
                     
                 </div>
+
                 <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
                     <i></i>
                     <i></i>
@@ -667,7 +688,7 @@ button.contact_form_submit {
             
         </div>
     </section>
-
+    <button class="back-to-top" type="button"></button>
 
  
     <section class="contact_us">
@@ -679,7 +700,7 @@ button.contact_form_submit {
                             <div class="col-md-10">
                                 <div class="contact_form_inner">
                                     <div class="contact_field">
-                                        <h3>Contatc Us</h3>
+                                        <h3>Contact Us</h3>
                                         <p>We invite you to come just as you are and be part of this community of people who are striving together to discover God’s purpose and plan for their lives!</p>
                                         <input style="margin: 8px;" type="text" class="form-control form-group" placeholder="Name" />
                                         <input style="margin: 8px;" type="text" class="form-control form-group" placeholder="Email" />
@@ -712,7 +733,9 @@ button.contact_form_submit {
                             </div>
                             <div class="d-flex info_single align-items-center">
                                 <i class="fa fa-building"></i>
-                                <span>Rccg , New york, USA</span>
+                                <span>RCCG Jesus House Mobile,
+                                    44 Azalea Road, Suite C
+                                    Mobile, AL 36609.</span>
                             </div>
             
                         </div>
@@ -727,10 +750,10 @@ button.contact_form_submit {
             <div class="row">
                 <div class="col-md-10 offset-md-1">
                     <div class="map_inner">
-                        <h4>Find Us on Google Map</h4>
+                        <h4 style="text-align: center; font-weight: bold; font-size: 35px;">Find Us on Google Map</h4>
                         
                         <div class="map_bind">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52881861.81165771!2d-161.7236558230539!3d36.00435169323713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sng!4v1708162196804!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3431.939723495493!2d-88.1549097!3d30.6638258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a4d234847ec6d%3A0x42acd0cf17f05b68!2s444%20Azalea%20Rd%2C%20Mobile%2C%20AL%2036609%2C%20USA!5e0!3m2!1sen!2sng!4v1710945137666!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
@@ -750,9 +773,9 @@ button.contact_form_submit {
         </div>
     </div>
 
-    <footer style="font-size: 16px;">
+    <footer style="font-size: 16px; margin-top: 12%;">
         <div>
-             <span class="logo"><img src="rccg.png"></span>
+             <span class="logo"><img src="rlogo.png"></span>
         </div>
     
         <div class="row">
@@ -772,9 +795,11 @@ button.contact_form_submit {
                      <span class="footer-cat">Home</span>
                  </div>
                  <ul class="footer-cat-links">
-                     <li><a href="index.html"><span>Home</span></a></li>
+                     
                      <li><a href="service/history.html"><span>Our History</span></a></li>
+                     <li><a href="service/service.html"><span>Our Services</span></a></li>
                      <li><a href="service/mission.html"><span>Our Mission</span></a></li>
+                     <li><a href="service/pr.html"><span>Our Priorities</span></a></li>
                      <li><a href="service/values.html"><span>Our Values</span></a></li>
                      <li><a href="service/pastor.html"><span>Our Pastor</span></a></li>
                     
@@ -789,6 +814,8 @@ button.contact_form_submit {
                      <li><a href="donate.html"><span>Donate</span></a></li>
                      <li><a href="vid.html"><span>Video Sermon</span></a></li>
                      <li><a href="pod.html"><span>Podcast Sermon</span></a></li>
+                     <li><a href="gallery.html"><span>Gallery</span></a></li>
+                     <li><a href="activities.html"><span>Activities</span></a></li>
                      <li><a href="contact.html"><span>Contact Us</span></a></li>
                  </ul>
              </div>
@@ -811,8 +838,8 @@ button.contact_form_submit {
                      <ul>
                          <li>
                              <i class="fa fa-building"></i>
-                             <div>Los Angeles<br/>
-                                444 Azalea Rd, Ste C, Mobile, AL 36609</div>
+                             
+                                444 Azalea Rd, Ste C, Mobile, AL 36609
                          </li>
                          
                      </ul>
@@ -916,5 +943,25 @@ button.contact_form_submit {
         });
 
     </script>
+        <script>
+            // Back to top
+            var amountScrolled = 200;
+            var amountScrolledNav = 25;
+      
+            $(window).scroll(function() {
+              if ( $(window).scrollTop() > amountScrolled ) {
+                $('button.back-to-top').addClass('show');
+              } else {
+                $('button.back-to-top').removeClass('show');
+              }
+            });
+      
+            $('button.back-to-top').click(function() {
+              $('html, body').animate({
+                scrollTop: 0
+              }, 800);
+              return false;
+            });
+        </script>
 </body>
 </html>

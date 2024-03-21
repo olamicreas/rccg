@@ -63,9 +63,26 @@
         text-decoration-color: initial;
         text-transform: uppercase;
         letter-spacing: 1px;
-        margin-top: 6.15rem;
-        margin-bottom: 2.1rem;
+        margin-top: 1rem;
+        
     }
+
+    .slider-title {
+            
+            margin-top: 70%;
+        }
+    @media only screen and (min-width : 1024px) {
+     
+        .slider-title {
+            font-size: 50px;
+            margin-top: 20%;
+        }
+        .dropdown-content {
+            width: 200px;
+        }
+    }
+
+
     .equal-height {
         opacity: 0;
         transform: translateY(90px);
@@ -251,19 +268,24 @@
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  width: 30%;
-  border-radius: 15px;
+
+
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+    border-radius: 15px;
+    padding: 2px;
+    
+    
 }
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  
   text-decoration: none;
   display: block;
 }
@@ -272,7 +294,7 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: white; opacity: 0.3; color: #000;}
+
 
 
 .donate {
@@ -1121,59 +1143,72 @@
                         text-align: center;
                     } 
                 }
+
+                @media only screen and (min-width : 1024px) {
+                    a {
+                        line-height: 1.2em;
+                    }
+                }
+                a {
+                    line-height: 0;
+                }
         
 </style>
 <body>
     <nav id="bar" class=" fixed-top">
         <nav class="nav">
-            <div class="container">
+            <div class="" style="min-width: 100%;">
                 <div class="logo">
-                    <a href="#"><img src="../rlogo.png" style="width: 70px;"></a>
+                    <a href="#"><img src="../rlogo.png" width="100" height="5"></a>
                 </div>
+                
                 <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="../index.html" style="font-size: 18px;">Home</a></li>
+                    <ul class="navlinks" >
+                        <li><a href="index.html" style="font-size: 18px;">Home</a></li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Who are we</button>
+                                <a class="dropbtn " style="font-size: 18px;">Who are we</a>
                                 <div class="dropdown-content">
-                                  <a href="history.html" style="color: black; font-size: 62%;">Our History</a>
-                                  <a href="service.html" style="color: black; font-size: 62%;">Our Service</a>
-                                  <a href="mission.html" style="color: black; font-size: 62%;">Our Missions</a>
-                                  <a href="values.html" style="color: black; font-size: 62%;">Our Values</a>
-                                  <a href="pastor.html" style="color: black; font-size: 62%;">Our Pastor</a>
+                                  <a href="history.html"  style="color: black; font-size: 62%; margin: 17%;">Our History</a>
+                                  <a href="service.html"  style="color: black; font-size: 62%; margin: 17%;">Our Service</a>
+                                  <a href="mission.html"  style="color: black; font-size: 62%; margin: 17%;">Our Missions</a>
+                                  <a href="values.html"  style="color: black; font-size: 62%; margin: 17%;">Our Values</a>
+                                  <a href="pr.html"  style="color: black; font-size: 62%; margin: 17%;">Our Priorities</a>
+                                  <a href="pastor.html"  style="color: black; font-size: 62%; margin: 17%;">Our Pastor</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Sermon</button>
+                                <a class="dropbtn" style="font-size: 18px;">Sermon</a>
                                 <div class="dropdown-content">
-                                  <a href="../vid.html" style="color: black; font-size: 62%;">Video Sermon</a>
-                                  <a href="../pod.html" style="color: black; font-size: 62%;">Podcast Sermon</a>
+                                  <a href="vid.html" target="tab" style="color: black; font-size: 62%; margin: 17%;">Video Sermon</a>
+                                  <a href="pod.html" target="tab" style="color: black; font-size: 62%; margin: 17%;">Podcast Sermon</a>
                                   
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Connect</button>
+                                <a class="dropbtn" style="font-size: 18px;">Connect</a>
                                 <div class="dropdown-content">
-                                  <a href="../prreq.html" style="color: black; font-size: 62%;">Prayer request</a>
-                                  <a href="ytlive.html" style="color: black; font-size: 62%;">Live streaming</a>
+                                  <a href="../prreq.html" target="tab" style="color: black; font-size: 62%; margin: 17%;">Prayer request</a>
+                                  <a href="ytlive.html" target="tab" style="color: black; font-size: 62%; margin: 17%;">Live streaming</a>
+                                  <a href="../activities.html" target="tab" style="color: black; font-size: 62%; margin: 17%;">Activities</a>
                                   
                                 </div>
                             </div>
                         </li>
-                        <li><a href="../contact.html" style="font-size: 18px;">Contact</a></li>
+                        <li><a href="../contact.html" target="tab" style="font-size: 18px;">Contact</a></li>
                         
                     </ul>
                 </div>
                 <div class="" style="float: right;">
                    
-                    <button><a href="donate.html" style="color: black; text-decoration: none;">Donate</a></button>
+                    <button><a href="../donate.html" style="color: black; text-decoration: none;">Donate</a></button>
                     
                 </div>
+
                 <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
                     <i></i>
                     <i></i>
@@ -1188,7 +1223,7 @@
             <div class="swiper-wrapper" style="background-size: cover;">
                 <!-- Slides -->
                 <div class="swiper-slide slide-1">
-                    <div class="container">
+                    <div class="container" >
                         <div class="slider-container">
                             <div class="animated-area">
                                 <p class="slider-title cssanimation sequence leFadeInLeft pt" style="color: white;">Our History</p>
@@ -1249,7 +1284,7 @@
                                                   <!-- /.sc_promo_image -->
                                                   <div class="sc_promo_text">
                                                     <div class="">
-                                                      <span class="sc_item_subtitle sc_promo_subtitle sc_item_subtitle_above sc_item_title_style_accent"> Founder and first general overseer (G.O) of the Redeemed Christian Church of God (RCCG) </span>
+                                                      <span class="sc_item_subtitle sc_promo_subtitle sc_item_subtitle_above sc_item_title_style_accent" style="font-size: 30px; color: #1595bf; margin-top: 2%;"> Founder and first general overseer (G.O) of the Redeemed Christian Church of God (RCCG) </span>
                                                       <h2 style=" font-size: 30px; font-weight: bold; width: 100%;">Reverend Josiah Olufemi Akindayomi</h2>
                                                       <div class="sc_item_descr sc_promo_descr">
                                                         <p>Reverend Akindayomi’s call as a servant of God began whilst still a member of the Cherubim and Seraphim Church, a prompting he ignored for several years, until repeated business failures brought him to the point of repentance. This season became the turning-point for him in his relationship with God. Humbled, he made the decision to totally yield to God and His purposes, seeking divine confirmation of a call to ministry. The confirmation he sought eventually came through the Holy Scriptures. By 1947, he had also become increasingly concerned about some of the doctrinal beliefs of the Cherubim and Seraphim Church to which he belonged and became totally persuaded to leave in 1952.</p>
@@ -1310,7 +1345,7 @@
                                                   <!-- /.sc_promo_image -->
                                                   <div class="sc_promo_text">
                                                     <div class=" trx_addons_inline_98490871">
-                                                      <span class="sc_item_subtitle sc_promo_subtitle sc_item_subtitle_above sc_item_title_style_accent">The General Overseer (G.O) of the Redeemed Christian Church of God (RCCG) </span>
+                                                      <span class="sc_item_subtitle sc_promo_subtitle sc_item_subtitle_above sc_item_title_style_accent"  style="font-size: 30px; color: #1595bf; margin-top: 2%;">The General Overseer (G.O) of the Redeemed Christian Church of God (RCCG) </span>
                                                       
                                                         <h2 class="sc_item_title_text" style=" font-size: 40px; font-weight: bold; width: 100%;">Enoch Adejare Adeboye</h3>
                                                      
@@ -1350,7 +1385,7 @@
                                                   <!-- /.sc_promo_image -->
                                                   <div class="sc_promo_text" >
                                                     <div class=" trx_addons_inline_253887713">
-                                                      <span class="sc_item_subtitle sc_promo_subtitle sc_item_subtitle_above sc_item_title_style_accent">Special Assistant to G.O and Chairman RCCG North America </span>
+                                                      <span class="sc_item_subtitle sc_promo_subtitle sc_item_subtitle_above sc_item_title_style_accent"  style="font-size: 30px; color: #1595bf; margin-top: 2%;">Special Assistant to G.O and Chairman RCCG North America </span>
                                                       
                                                         <h2 style=" font-size: 40px; font-weight: bold; width: 100%;">Pastor James Fadel,</h2>
                                                       
@@ -1404,7 +1439,7 @@
             <div class="elementor-widget-wrap">
             <div class="elementor-element elementor-element-93217b0 elementor-widget elementor-widget-trx_sc_title" data-id="93217b0" data-element_type="widget" data-widget_type="trx_sc_title.default">
             <div class="elementor-widget-container">
-            <div id="trx_sc_title_1617248110" class="sc_title sc_title_default"><h2 class="sc_item_title sc_title_title sc_align_center sc_item_title_style_default trx_addons_inline_774433971"><span class="sc_item_title_text">Helping people know Jesus, grow in faith &amp; go into the world equipped to serve.</span></h2></div><!-- /.sc_title -->		</div>
+            <div id="trx_sc_title_1617248110" class="sc_title sc_title_default"><h2 class="sc_item_title sc_title_title sc_align_center sc_item_title_style_default trx_addons_inline_774433971"><span class="sc_item_title_text" style="font-weight: bold;">Helping people know Jesus, grow in faith &amp; go into the world equipped to serve.</span></h2></div><!-- /.sc_title -->		</div>
             </div>
             <div class="elementor-element elementor-element-74fbbb3 elementor-widget elementor-widget-spacer" data-id="74fbbb3" data-element_type="widget" data-widget_type="spacer.default">
             <div class="elementor-widget-container">
@@ -1419,7 +1454,7 @@
                 </div>
             </div>
             </section>    
-
+            <button class="back-to-top" type="button"></button>
     <div class="loader" style="display: flex; align-items: center; justify-content: center;">
         <div class="u-loading">
             <div class="u-loading__symbol" >
@@ -1430,7 +1465,7 @@
 
     <footer style="font-size: 16px;">
         <div>
-             <span class="logo"><img src="../rccg.png"></span>
+             <span class="logo"><img src="../rlogo.png"></span>
         </div>
     
         <div class="row">
@@ -1449,13 +1484,15 @@
                      <span class="footer-toggle"></span>
                      <span class="footer-cat">Home</span>
                  </div>
-                 <ul class="footer-cat-links">
-                     <li><a href="../donate.html"><span>Home</span></a></li>
+                <ul class="footer-cat-links" style="margin: 0 0em 0px 0em;">
                      <li><a href="history.html"><span>Our History</span></a></li>
+                     <li><a href="service.html"><span>Our Services</span></a></li>
                      <li><a href="mission.html"><span>Our Mission</span></a></li>
-                     <li><a href="values.html"><span>Our Values</span></a></li>
+                     <li><a href="pr.html"><span>Our Priorities</span></a></li>
+                     <li><a id="values-link" href="values.html" style="cursor: pointer; pointer-events: all;">Our Values</a></li>
+                     <li><a href="pastor.html"><span>Our Pastor</span></a></li>
                     
-                 </ul>
+                </ul>
              </div>
              <div class="kol">
                  <div class="link-cat" onclick="footerToggle(this)">
@@ -1463,9 +1500,11 @@
                      <span class="footer-cat">Quick Links</span>
                  </div>
                  <ul class="footer-cat-links">
-                     <li><a href=""><span>Donate</span></a></li>
+                     <li><a href="../donate.html"><span>Donate</span></a></li>
                      <li><a href="../vid.html"><span>Video Sermon</span></a></li>
                      <li><a href="../pod.html"><span>Podcast Sermon</span></a></li>
+                     <li><a href="../activities.html"><span>Activities</span></a></li>
+                     <li><a href="../gallery.html"><span>Gallery</span></a></li>
                      <li><a href="../contact.html"><span>Contact Us</span></a></li>
                  </ul>
              </div>
@@ -1488,8 +1527,8 @@
                      <ul>
                          <li>
                              <i class="fa fa-building"></i>
-                             <div>Los Angeles<br/>
-                                444 Azalea Rd, Ste C, Mobile, AL 36609</div>
+                             
+                                444 Azalea Rd, Ste C, Mobile, AL 36609
                          </li>
                          
                      </ul>
@@ -1592,6 +1631,26 @@
 
         });
 
+    </script>
+    <script>
+        // Back to top
+        var amountScrolled = 200;
+        var amountScrolledNav = 25;
+  
+        $(window).scroll(function() {
+          if ( $(window).scrollTop() > amountScrolled ) {
+            $('button.back-to-top').addClass('show');
+          } else {
+            $('button.back-to-top').removeClass('show');
+          }
+        });
+  
+        $('button.back-to-top').click(function() {
+          $('html, body').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
     </script>
 </body>
 </html>

@@ -78,7 +78,7 @@ body {
 .nav div.main_list ul li a {
     text-decoration: none;
     color: #fff;
-    line-height: 65px;
+    
     font-size: 2rem;
     font-weight: bold;
 }
@@ -157,7 +157,7 @@ body {
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 20px;
     }
     .nav div.media_button {
@@ -231,9 +231,10 @@ body {
 .nav div:nth-child(3) button {
     background-color: white;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
     width: 120px;
-    height: 40px;
+    height: 48px;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -271,7 +272,7 @@ body {
 }
 
 .nav div:nth-child(3) button:hover{
-    background-color: rgb(242, 104, 55);
+    background-color: rgb(255, 189, 17);
     text-decoration: none;
 }
 
@@ -415,9 +416,10 @@ body {
 }
 
 .affix {
-    padding: 0;
+    padding: 10px;
    
-    background-color: #2999c2
+    background-color: #2999c2;
+    min-height: 10%;
    
 }
 
@@ -487,10 +489,13 @@ body {
     font-style: italic; 
     
     color: rgb(255, 189, 17); 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
+.sc_title_title {
+    font-weight: bold;
+}
 
 
 
@@ -614,7 +619,7 @@ body {
         color: white;
         padding: 10px 40px;
         border-radius: 30px;
-        font-size: 17px;
+        font-size: 22px;
         font-family: roboto;
 
         -webkit-transition: all .3s ease-in-out;
@@ -687,7 +692,7 @@ body {
         .yelTxt {
             font-size: 30px;
             font-style: italic; 
-            
+            line-height: 0;
             color: rgb(255, 189, 17); 
             font-family: 'Courier New', Courier, monospace;
         }
@@ -10427,7 +10432,7 @@ input#subscriber-email::placeholder {
   }
 
   .footer-cat-links a {
-    pointer-events: none;
+    pointer-events: auto;
   }
 
   .footer-cat-links li {
@@ -10542,3 +10547,92 @@ input#subscriber-email::placeholder {
     padding-left: 1em;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+    .footer-cat-links a {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .footer-cat-links li {
+        line-height: 2.52;
+        opacity: 1;
+    }
+}
+
+.dropdown:hover .dropbtn {color: rgb(255, 189, 17);}
+
+
+button.back-to-top{
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff;
+      height: 0px;
+    width: 0px;
+    overflow: hidden;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    color: transparent;
+      clear: both;
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    border: none;
+    right: 50px;
+      bottom: 75px;
+    font-size: 0px;
+    outline: 0 !important;
+    z-index: 99;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  button.back-to-top:hover,
+  button.back-to-top:active,
+  button.back-to-top:focus,{
+    outline: 0 !important;
+  }
+  button.back-to-top::before,
+  button.back-to-top::after {
+    content: "";
+      display: block;
+      vertical-align: middle;
+      border-bottom: solid 10px #EA5D5F;
+      border-left: solid 10px transparent;
+      line-height: 0;
+      border-right: solid 10px transparent;
+      height: 0;
+      margin: 18px auto 0;
+      width: 0;
+    border-radius:20px;
+    visibility: hidden;
+  }
+  button.back-to-top.show::after,
+  button.back-to-top.show::before{
+    visibility: visible;
+  }
+  button.back-to-top::after {
+    border-bottom-color:#fff;
+        position: relative;
+    top:-24px;
+  }
+  button.back-to-top.show {
+    display: block;
+    background: #fff;
+    color: #00ab6c;
+    font-size: 25px;
+    right: 25px;
+      bottom: 50px;
+    height: 50px;
+    width: 50px;
+    visibility: visible;
+      box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  }
+  button.back-to-top.show:active {
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  }

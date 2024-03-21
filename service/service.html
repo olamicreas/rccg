@@ -272,7 +272,7 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: white; opacity: 0.3; color: #000;}
+.dropdown:hover .dropbtn {color: rgb(255, 189, 17);}
 
 
 .donate {
@@ -408,66 +408,87 @@
     color: white;
 }
 
+.slider-title {
+            
+            margin-top: 70%;
+        }
+
+
+@media only screen and (min-width : 1024px) {
+     
+     .slider-title {
+         font-size: 80px;
+         margin-top: 15%;
+     }
+     .dropdown-content {
+         width: 200px;
+     }
+ }
+
 </style>
 <body>
-    <nav id="bar" class=" fixed-top">
-        <nav class="nav">
-            <div class="container">
-                <div class="logo">
-                    <a href="../index.html"><img src="../rlogo.png" style="width: 70px;"></a>
-                </div>
-                <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="../index.html" style="font-size: 18px;">Home</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Who are we</button>
-                                <div class="dropdown-content">
-                                  <a href=""hid style="color: black; font-size: 62%;">Our History</a>
-                                  <a href="service.html" style="color: black; font-size: 62%;">Our Service</a>
-                                  <a href="mission.html"style="color: black; font-size: 62%;">Our Missions</a>
-                                  <a href="values.html" style="color: black; font-size: 62%;">Our Values</a>
-                                  <a href="pastor.html" style="color: black; font-size: 62%;">Our Pastor</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Sermon</button>
-                                <div class="dropdown-content">
-                                  <a href="../vid.html" style="color: black; font-size: 62%;">Video Sermon</a>
-                                  <a href="../pod.html" style="color: black; font-size: 62%;">Podcast Sermon</a>
-                                  
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn" style="font-size: 18px;">Connect</button>
-                                <div class="dropdown-content">
-                                  <a href="../prreq.html" style="color: black; font-size: 62%;">Prayer request</a>
-                                  <a href="ytlive.html" style="color: black; font-size: 62%;">Live streaming</a>
-                                  
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="../contact.html" style="font-size: 18px;">Contact</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="" style="float: right;">
-                   
-                  <button><a href="donate.html" style="color: black; text-decoration: none;">Donate</a></button>
-                  
-              </div>
-              <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
+  <nav id="bar" class=" fixed-top">
+    <nav class="nav">
+        <div class="" style="min-width: 100%;">
+            <div class="logo">
+                <a href="#"><img src="../rlogo.png" width="100" height="5"></a>
             </div>
-        </nav>
+            
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks" >
+                    <li><a href="../index.html" style="font-size: 18px;">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn" style="font-size: 18px;">Who are we</a>
+                            <div class="dropdown-content">
+                              <a href="history.html"  style="color: black; font-size: 52%">Our History</a>
+                              <a href="service.html"  style="color: black; font-size: 52%">Our Services</a>
+                              <a href="mission.html"  style="color: black; font-size: 52%">Our Mission</a>
+                              <a href="values.html"  style="color: black; font-size: 52%">Our Values</a>
+                              <a href="pr.html"  style="color: black; font-size: 52%">Our Priorities</a>
+                              <a href="pastor.html"  style="color: black; font-size: 52%">Our Pastor</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn" style="font-size: 18px;">Sermon</a>
+                            <div class="dropdown-content">
+                              <a href="../vid.html" target="tab" style="color: black; font-size: 52%">Video Sermon</a>
+                              <a href="../pod.html" target="tab" style="color: black; font-size: 52%">Podcast Sermon</a>
+                              
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn" style="font-size: 18px;">Connect</a>
+                            <div class="dropdown-content">
+                              <a href="../prreq.html" target="tab" style="color: black; font-size: 52%">Prayer request</a>
+                              <a href="ytlive.html" target="tab" style="color: black; font-size: 52%">Live streaming</a>
+                              <a href="../activities.html" target="tab" style="color: black; font-size: 52%">Activities</a>
+                              
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../contact.html" target="tab" style="font-size: 18px;">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <div class="" style="float: right;">
+               
+                <button><a href="../donate.html" style="color: black; text-decoration: none;">Donate</a></button>
+                
+            </div>
+
+            <span class="navTrigger" style="margin-top: 6%; margin-right: 23%;">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
     </nav>
+</nav>
     <section>
         <div class="swiper-container">
             <!-- Additional required wrapper -->
@@ -549,15 +570,15 @@
                                                           <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg nazareth_inline_1831209493">
                                                             <div class="mask"></div>
                                                             <div class="icons">
-                                                              <a href="https://rccgmobile.org/services/thanksgiving-service/" aria-hidden="true" class="icon-search-alt"></a>
+                                                              <a href="thanks.html" aria-hidden="true" class="icon-search-alt"></a>
                                                             </div>
                                                           </div>
                                                           <div class="sc_services_item_content">
                                                             <h6 class="sc_services_item_title">
-                                                              <a href="https://rccgmobile.org/services/thanksgiving-service/">Thanksgiving Service</a>
+                                                              <a href="thanks.html">Thanksgiving Service</a>
                                                             </h6>
                                                             <div class="sc_services_item_text">1st Sunday of every month @ 10:30am to 12:30pm.... <div class="sc_services_item_text-link">
-                                                                <a href="https://rccgmobile.org/services/thanksgiving-service/">Learn More</a>
+                                                                <a href="thanks.html">Learn More</a>
                                                               </div>
                                                             </div>
                                                           </div>
@@ -568,15 +589,15 @@
                                                           <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg nazareth_inline_1346348752">
                                                             <div class="mask"></div>
                                                             <div class="icons">
-                                                              <a href="https://rccgmobile.org/services/sunday-services/" aria-hidden="true" class="icon-search-alt"></a>
+                                                              <a href="sunday.html" aria-hidden="true" class="icon-search-alt"></a>
                                                             </div>
                                                           </div>
                                                           <div class="sc_services_item_content">
                                                             <h6 class="sc_services_item_title">
-                                                              <a href="https://rccgmobile.org/services/sunday-services/">Sunday Services</a>
+                                                              <a href="sunday.html">Sunday Services</a>
                                                             </h6>
                                                             <div class="sc_services_item_text">Service Times: 9:00am to 9:30am. SUNDAY SCHOOL SERVICE Times:-9:30am to 10:30am WORSHIP ... <div class="sc_services_item_text-link">
-                                                                <a href="https://rccgmobile.org/services/sunday-services/">Learn More</a>
+                                                                <a href="sunday.html">Learn More</a>
                                                               </div>
                                                             </div>
                                                           </div>
@@ -587,15 +608,15 @@
                                                           <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg nazareth_inline_337760243">
                                                             <div class="mask"></div>
                                                             <div class="icons">
-                                                              <a href="https://rccgmobile.org/services/choir-rehearsal/" aria-hidden="true" class="icon-search-alt"></a>
+                                                              <a href="choir.html" aria-hidden="true" class="icon-search-alt"></a>
                                                             </div>
                                                           </div>
                                                           <div class="sc_services_item_content">
                                                             <h6 class="sc_services_item_title">
-                                                              <a href="https://rccgmobile.org/services/choir-rehearsal/">Choir Rehearsal</a>
+                                                              <a href="choir.html">Choir Rehearsal</a>
                                                             </h6>
                                                             <div class="sc_services_item_text">Saturday Choir Rehearsal Service Times: - 5pm to 6:30pm CST... <div class="sc_services_item_text-link">
-                                                                <a href="https://rccgmobile.org/services/choir-rehearsal/">Learn More</a>
+                                                                <a href="choir.html">Learn More</a>
                                                               </div>
                                                             </div>
                                                           </div>
@@ -606,15 +627,15 @@
                                                           <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg nazareth_inline_1521602522">
                                                             <div class="mask"></div>
                                                             <div class="icons">
-                                                              <a href="https://rccgmobile.org/services/classics12/" aria-hidden="true" class="icon-search-alt"></a>
+                                                              <a href="bible.html" aria-hidden="true" class="icon-search-alt"></a>
                                                             </div>
                                                           </div>
                                                           <div class="sc_services_item_content">
                                                             <h6 class="sc_services_item_title">
-                                                              <a href="https://rccgmobile.org/services/classics12/">Bible Study</a>
+                                                              <a href="bible.html">Bible Study</a>
                                                             </h6>
                                                             <div class="sc_services_item_text">WEDNESDAY BIBLE STUDY Service Times: -7:pm to 8:pm CST... <div class="sc_services_item_text-link">
-                                                                <a href="https://rccgmobile.org/services/classics12/">Learn More</a>
+                                                                <a href="bible.html">Learn More</a>
                                                               </div>
                                                             </div>
                                                           </div>
@@ -653,7 +674,7 @@
           </div>
           <!-- </.content> -->
      
-
+          <button class="back-to-top" type="button"></button>
     <div class="loader" style="display: flex; align-items: center; justify-content: center;">
         <div class="u-loading">
             <div class="u-loading__symbol" >
@@ -663,85 +684,89 @@
     </div>
 
     <footer style="font-size: 16px;">
-        <div>
-             <span class="logo"><img src="../rccg.png"></span>
-        </div>
-    
-        <div class="row">
-             <div class="kol">                
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Get in Touch</span>
-                 </div>
-                 <ul class="footer-cat-links">
-                     <li><a href=""><span><i class="fa fa-inbox"></i> info@rccgmobile.org</span></a></li>
-                     <li><a href=""><span><i class="fa fa-phone"></i> +251-378-5182</span></a></li>
-                 </ul>
-             </div>
-             <div class="kol">
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Home</span>
-                 </div>
-                 <ul class="footer-cat-links">
-                     <li><a href="../index.html"><span>Home</span></a></li>
-                     <li><a href="history.html"><span>Our History</span></a></li>
-                     <li><a href="mission.html"><span>Our Mission</span></a></li>
-                     <li><a href="values.html"><span>Our Values</span></a></li>
-                     <li><a href="pastor.html"><span>Our Pastor</span></a></li>
-                 </ul>
-             </div>
-             <div class="kol">
-                 <div class="link-cat" onclick="footerToggle(this)">
-                     <span class="footer-toggle"></span>
-                     <span class="footer-cat">Quick Links</span>
-                 </div>
-                 <ul class="footer-cat-links">
-                     <li><a href="../donate.html"><span>Donate</span></a></li>
-                     <li><a href="../vid.html"><span>Video Sermon</span></a></li>
-                     <li><a href="../pod.html"><span>Podcast Sermon</span></a></li>
-                     <li><a href="../contact.html"><span>Contact Us</span></a></li>
-                 </ul>
-             </div>
-             <div class="kol" id="newsletter">
-                 <span> RCCG Jesus House Mobile.</span>
-                 <form id="subscribe">
-                     <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
-                     <input type="submit" value="Subscribe" id="btn-scribe"/>
-                 </form>
-                 
-                 <div class="social-links social-2">
-                     <a href=""><i class="fa fa-facebook-f"></i></a>
-                     <a href=""><i class="fa fa-twitter"></i></a>
-                     <a href=""><i class="fa fa-youtube"></i></a>
-                     
-                 </div>
-    
-                 <div id="address">
-                     <span>Church Location</span>
-                     <ul>
-                         <li>
-                             <i class="fa fa-building"></i>
-                             <div>Los Angeles<br/>
-                                444 Azalea Rd, Ste C, Mobile, AL 36609</div>
-                         </li>
-                         
-                     </ul>
-                 </div>
-                 
-             </div>
-             <div class="social-links social-1 colu">
-                 <a href=""><i class="fa fa-facebook-f"></i></a>
-                 <a href=""><i class="fa fa-twitter"></i></a>
-                 <a href=""><i class="fa fa-youtube"></i></a>
-                 
-             </div>
-        </div>
-        <div id="copyright">
-            &copy; 2024 All Rights Reserved. RCCG Jesus House Mobile.
-        </div>
-     
-     </footer>
+      <div>
+           <span class="logo"><img src="../rlogo.png"></span>
+      </div>
+  
+      <div class="row">
+           <div class="kol">                
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Get in Touch</span>
+               </div>
+               <ul class="footer-cat-links">
+                   <li><a href=""><span><i class="fa fa-inbox"></i> info@rccgmobile.org</span></a></li>
+                   <li><a href=""><span><i class="fa fa-phone"></i> +251-378-5182</span></a></li>
+               </ul>
+           </div>
+           <div class="kol">
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Home</span>
+               </div>
+              <ul class="footer-cat-links" style="margin: 0 0em 0px 0em;">
+                   <li><a href="history.html"><span>Our History</span></a></li>
+                   <li><a href="service.html"><span>Our Services</span></a></li>
+                   <li><a href="mission.html"><span>Our Mission</span></a></li>
+                   <li><a href="pr.html"><span>Our Priorities</span></a></li>
+                   <li><a id="values-link" href="values.html" style="cursor: pointer; pointer-events: all;">Our Values</a></li>
+                   <li><a href="pastor.html"><span>Our Pastor</span></a></li>
+                  
+              </ul>
+           </div>
+           <div class="kol">
+               <div class="link-cat" onclick="footerToggle(this)">
+                   <span class="footer-toggle"></span>
+                   <span class="footer-cat">Quick Links</span>
+               </div>
+               <ul class="footer-cat-links">
+                   <li><a href="../donate.html"><span>Donate</span></a></li>
+                   <li><a href="../vid.html"><span>Video Sermon</span></a></li>
+                   <li><a href="../pod.html"><span>Podcast Sermon</span></a></li>
+                   <li><a href="../activities.html"><span>Activities</span></a></li>
+                   <li><a href="../gallery.html"><span>Gallery</span></a></li>
+                   <li><a href="../contact.html"><span>Contact Us</span></a></li>
+               </ul>
+           </div>
+           <div class="kol" id="newsletter">
+               <span> RCCG Jesus House Mobile.</span>
+               <form id="subscribe">
+                   <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
+                   <input type="submit" value="Subscribe" id="btn-scribe"/>
+               </form>
+               
+               <div class="social-links social-2">
+                   <a href=""><i class="fa fa-facebook-f"></i></a>
+                   <a href=""><i class="fa fa-twitter"></i></a>
+                   <a href=""><i class="fa fa-youtube"></i></a>
+                   
+               </div>
+  
+               <div id="address">
+                   <span>Church Location</span>
+                   <ul>
+                       <li>
+                           <i class="fa fa-building"></i>
+                           
+                              444 Azalea Rd, Ste C, Mobile, AL 36609
+                       </li>
+                       
+                   </ul>
+               </div>
+               
+           </div>
+           <div class="social-links social-1 colu">
+               <a href=""><i class="fa fa-facebook-f"></i></a>
+               <a href=""><i class="fa fa-twitter"></i></a>
+               <a href=""><i class="fa fa-youtube"></i></a>
+               
+           </div>
+      </div>
+      <div id="copyright">
+          &copy; 2024 All Rights Reserved. RCCG Jesus House Mobile.
+      </div>
+   
+   </footer>
 
     <script>
         $(function () {
@@ -826,6 +851,26 @@
 
         });
 
+    </script>
+    <script>
+      // Back to top
+      var amountScrolled = 200;
+      var amountScrolledNav = 25;
+
+      $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+          $('button.back-to-top').addClass('show');
+        } else {
+          $('button.back-to-top').removeClass('show');
+        }
+      });
+
+      $('button.back-to-top').click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
     </script>
 </body>
 </html>
