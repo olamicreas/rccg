@@ -633,7 +633,7 @@
                 <div class="donate-amount-box">
                     
                     <div class="denomination-other">
-                        <input autocomplete="off" type="text" name="amount" value="" placeholder="Enter amount">
+                        <input id="don" autocomplete="off" type="text" name="amount" value="" placeholder="Enter amount">
                     </div>
                     <input style="background-color: #ddd;" type="text" id="firstName" name="firstName" placeholder="First Name" required>
                     <input style="background-color: #ddd;" type="text" id="lastName" name="lastName" placeholder="Last Name" required>
@@ -665,7 +665,7 @@
                 </div>
                 <div class="donate-submit">
                     <form>
-                    <button type="submit" autocomplete="off" id="bbtn">Donate $5</button>
+                    <button type="submit" autocomplete="off" id="bbtn">Donate</button>
                     </form>
                     <p><small>Please note that contributions are not tax-deductible.</small></p>
                 </div>
@@ -961,6 +961,7 @@
 
         submitBtn.addEventListener("click", function(event) {
             event.preventDefault();
+            var don = document.getElementById("don").value;
             // Validate form fields
             var firstName = document.getElementById("firstName").value;
             var lastName = document.getElementById("lastName").value;
@@ -986,7 +987,7 @@
             console.log("Email:", email);
             console.log("Anonymous:", anonymous);
             console.log("Agree to Terms:", agree);
-
+            window.location.href = `https://www.paypal.com/donate/?business=Rccgjhm%40gmail.com&first_name=Testing&last_name=&email=&address1=&address2=&city=&state=&zip=&country=&invoice=3caa1778c2ae7c4744967a0257628153&amount=${don}&item_name=Tithe&currency_code=USD&return=https%3A%2F%2Frccgmobile.org%3Fgive-listener%3Dgive-gateway%26give-gateway-id%3Dpaypal%26give-gateway-method%3DhandleSuccessPaymentReturn%26donation-id%3D2866%26give-route-signature%3Dedecfc35b7c172e63c039820c5f9621f%26give-route-signature-id%3D2866%26give-route-signature-expiration%3D1711556138&cancel_return=https%3A%2F%2Frccgmobile.org%3Fgive-listener%3Dgive-gateway%26give-gateway-id%3Dpaypal%26give-gateway-method%3DhandleFailedPaymentReturn%26donation-id%3D2866%26give-route-signature%3Da7f514637b902c3041b1c9bc849add9e%26give-route-signature-id%3D2866%26give-route-signature-expiration%3D1711556138&notify_url=https%3A%2F%2Frccgmobile.org%3Fgive-listener%3Dgive-gateway%26give-gateway-id%3Dpaypal%26give-gateway-method%3DhandleIpnNotification&no_shipping=1&shipping=0&no_note=1&charset=UTF-8&custom=2866&rm=2&page_style=PayPal&cbt=RCCG+Jesus+House+Mobile&bn=givewp_SP&cmd=_donations`
             // Close the modal after submission
             closeModal();
         });
